@@ -51,14 +51,14 @@ function avgArray(array){
 
 let phrase = "The quick brown fox jumps over the lazy dog"
 let anotherPhrase = "The quick brown fox jumps over the"
-// my version //did not work
+// COLTS version with includes , which is a boolean method
 function isPangram(string){
-  let letters ="abcdefghijklmnopqrstuvwxyz"
-    if (string.indexOf(letters)===-1){
-      return true
-    } else {
-      return false
+  for (let char of "abcdefghijklmnopqrstuvwxyz"){
+    if (!string.includes(char)){
+        return false
+      } 
     }
+    return true
 }
 
 // COLT version
@@ -67,8 +67,34 @@ function isPangramColt(sentence){
     if(sentence.indexOf(char)=== -1){
       return false
     }
-    else {
-      return true
-    }
-  }
+  } 
+  return true
 }
+
+// #86 Write a getCard() function which returns a random playing card object, like:
+// {
+//   value: "K",
+//   suit: "clubs"
+// }
+// Pick a random value from : 1-10 J Q K A
+//pick a random suit from  clubds, spades, hearts and diamonds
+// return both as an object
+
+
+const cardNumber = [1,2,3,4,5,6,7,8,9,10, "J", "Q", "K", "A"]
+const suitCollection = ["club", "spade", "heart", 'diamond']
+
+const randomNumber = Math.random()
+
+function getCard(){
+
+  const cardNumber = [1,2,3,4,5,6,7,8,9,10, "J", "Q", "K", "A"]
+  const suitCollection = ["club", "spade", "heart", "diamond"]
+  let i = Math.floor(Math.random()*cardNumber.length)
+  let z = Math.floor(Math.random()*suitCollection.length)
+  console.log(z)
+  return  `Value : ${cardNumber[i]} \nSuit: ${suitCollection[z]}`
+
+}
+
+document.querySelector("p").textContent = getCard();
