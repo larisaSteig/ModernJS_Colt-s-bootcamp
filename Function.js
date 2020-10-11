@@ -80,11 +80,7 @@ function isPangramColt(sentence){
 //pick a random suit from  clubds, spades, hearts and diamonds
 // return both as an object
 
-
-const cardNumber = [1,2,3,4,5,6,7,8,9,10, "J", "Q", "K", "A"]
-const suitCollection = ["club", "spade", "heart", 'diamond']
-
-const randomNumber = Math.random()
+//My solution
 
 function getCard(){
 
@@ -97,4 +93,5 @@ function getCard(){
 
 }
 
-document.querySelector("p").textContent = getCard();
+//COLT solution is the same as mine!!!!!
+

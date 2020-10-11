@@ -1,0 +1,30 @@
+/*******************************************************EXERCISE A*****************************************/
+//write a getCard() function which returns a random playing card object, like :
+//{ value:"K"
+//suit:"clubs"}
+//Pick a random value from 2-3-4-A
+//pick a random suit from: clubs, spades, hearts, diamonds
+//Return both in object
+
+
+
+/*********************************
+
+/*******************************************************EXERCISE B*****************************************/
+
+  // Given an input string like this which contains words:
+// "sky kitten so THORN wood Sky soap throne"
+// Write a function which will print each unique word on its own line, followed by a number
+// representing the count for each word:
+// Kitten (1)
+// Sky (2)
+// So (1)
+// Soap (1)
+// Thorn (1)
+// Throne (1)
+// Wood (1)
+// Ensure the output shows the words in alphabetical order and each word is formatted in title
+// case (initial letter capitalized).
+
+/*******************************************************EXERCISE C*****************************************/
+/*let string="aabcbdbacb" return in a4,b3,c4
